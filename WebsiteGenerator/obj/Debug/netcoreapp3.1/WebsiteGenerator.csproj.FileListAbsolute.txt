@@ -1,0 +1,28 @@
+D:\-=ANDERS=-\-= OneDrive 1 TB =-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\bin\Debug\netcoreapp3.1\WebsiteGenerator.exe
+D:\-=ANDERS=-\-= OneDrive 1 TB =-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\bin\Debug\netcoreapp3.1\WebsiteGenerator.deps.json
+D:\-=ANDERS=-\-= OneDrive 1 TB =-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\bin\Debug\netcoreapp3.1\WebsiteGenerator.runtimeconfig.json
+D:\-=ANDERS=-\-= OneDrive 1 TB =-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\bin\Debug\netcoreapp3.1\WebsiteGenerator.runtimeconfig.dev.json
+D:\-=ANDERS=-\-= OneDrive 1 TB =-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\bin\Debug\netcoreapp3.1\WebsiteGenerator.dll
+D:\-=ANDERS=-\-= OneDrive 1 TB =-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\bin\Debug\netcoreapp3.1\WebsiteGenerator.pdb
+D:\-=ANDERS=-\-= OneDrive 1 TB =-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\obj\Debug\netcoreapp3.1\WebsiteGenerator.csproj.AssemblyReference.cache
+D:\-=ANDERS=-\-= OneDrive 1 TB =-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\obj\Debug\netcoreapp3.1\WebsiteGenerator.GeneratedMSBuildEditorConfig.editorconfig
+D:\-=ANDERS=-\-= OneDrive 1 TB =-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\obj\Debug\netcoreapp3.1\WebsiteGenerator.AssemblyInfoInputs.cache
+D:\-=ANDERS=-\-= OneDrive 1 TB =-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\obj\Debug\netcoreapp3.1\WebsiteGenerator.AssemblyInfo.cs
+D:\-=ANDERS=-\-= OneDrive 1 TB =-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\obj\Debug\netcoreapp3.1\WebsiteGenerator.csproj.CoreCompileInputs.cache
+D:\-=ANDERS=-\-= OneDrive 1 TB =-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\obj\Debug\netcoreapp3.1\WebsiteGenerator.dll
+D:\-=ANDERS=-\-= OneDrive 1 TB =-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\obj\Debug\netcoreapp3.1\WebsiteGenerator.pdb
+D:\-=ANDERS=-\-= OneDrive 1 TB =-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\obj\Debug\netcoreapp3.1\WebsiteGenerator.genruntimeconfig.cache
+C:\-=ANDERS=-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\obj\Debug\netcoreapp3.1\WebsiteGenerator.csproj.AssemblyReference.cache
+C:\-=ANDERS=-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\obj\Debug\netcoreapp3.1\WebsiteGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\-=ANDERS=-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\obj\Debug\netcoreapp3.1\WebsiteGenerator.AssemblyInfoInputs.cache
+C:\-=ANDERS=-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\obj\Debug\netcoreapp3.1\WebsiteGenerator.AssemblyInfo.cs
+C:\-=ANDERS=-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\obj\Debug\netcoreapp3.1\WebsiteGenerator.csproj.CoreCompileInputs.cache
+C:\-=ANDERS=-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\obj\Debug\netcoreapp3.1\WebsiteGenerator.dll
+C:\-=ANDERS=-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\obj\Debug\netcoreapp3.1\WebsiteGenerator.pdb
+C:\-=ANDERS=-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\bin\Debug\netcoreapp3.1\WebsiteGenerator.exe
+C:\-=ANDERS=-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\bin\Debug\netcoreapp3.1\WebsiteGenerator.deps.json
+C:\-=ANDERS=-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\bin\Debug\netcoreapp3.1\WebsiteGenerator.runtimeconfig.json
+C:\-=ANDERS=-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\bin\Debug\netcoreapp3.1\WebsiteGenerator.runtimeconfig.dev.json
+C:\-=ANDERS=-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\bin\Debug\netcoreapp3.1\WebsiteGenerator.dll
+C:\-=ANDERS=-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\bin\Debug\netcoreapp3.1\WebsiteGenerator.pdb
+C:\-=ANDERS=-\OneDrive\Programmering\-=SKOLA=-\-= ITHS =-\WebsiteGenerator\WebsiteGenerator\obj\Debug\netcoreapp3.1\WebsiteGenerator.genruntimeconfig.cache

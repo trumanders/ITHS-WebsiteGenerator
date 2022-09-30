@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>dd</title>
+<style>
+p { color: dd; }
+</style>
+</head>
+<body>
+<main>
+<h1>Välkomna dd!</h1>
+<p><b>Meddelande 1:</b>dd</p>
+<p><b>Kurs 1:</b>dd</p>
+</main>
+</body>
+</html>
