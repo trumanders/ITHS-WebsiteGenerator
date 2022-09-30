@@ -12,14 +12,14 @@ namespace WebsiteGenerator
     /// </summary>
     abstract class Website : IWebsite
     {
+        protected const string SAVED_WEBSITES_FILENAME = "Saved Websites.txt";
         private const int FILE_EXTENSION_LENGTH = 4;
         protected string beginningStr;
         protected string endStr;
         protected string websiteString;
         private string websiteName;
-        protected static int numOfSchoolWebsites;
-        protected static int numOfStyledSchoolWebsites;
         protected static int numOfWebsites;
+        protected static List<Website> allWebsites = new List<Website>();
 
 
         /// <summary>
@@ -33,15 +33,22 @@ namespace WebsiteGenerator
         // Set website name if not already exists
         public bool SetWebsiteName(string name)
         {
+            bool isValidName = true;
             if (File.Exists("Saved Websites.txt"))
             {
-                foreach (string line in File.ReadAllLines("Saved Websites.txt"))
-                {
-                    // Compare the passed file name to each line in Saved Websites (minus the file extension)
+                // Check if file with the chosen name already exits
+                foreach (string line in File.ReadAllLines(SAVED_WEBSITES_FILENAME))
+                {                    
                     if (name == line.Substring(0, line.Length - FILE_EXTENSION_LENGTH))
+                        isValidName = false;
+                }
+
+                // Check if a generated unsaved website already exists with the chosen name
+                for (int i = 0; i < numOfWebsites; i++)
+                {
+                    if (allWebsites[i].GetWebsiteName() == name)
                     {
-                        Console.WriteLine("En website med detta namn finns redan. Välj ett annat namn.");
-                        return false;
+
                     }
                 }
             }

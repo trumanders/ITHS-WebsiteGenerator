@@ -7,7 +7,7 @@ namespace WebsiteGenerator
 {
     class StyledSchoolWebsite : SchoolWebsite
     {
-        protected static int numOfSchoolWebsites;
+        public static int numOfStyledSchoolWebsites;
         private string color;
         
 

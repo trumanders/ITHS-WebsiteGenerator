@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>dfg</title>
+<body>
+<main>
+<h1>Välkomna dfg!</h1>
+<p><b>Meddelande 1:</b>dfg</p>
+<p><b>Kurs 1:</b>dfg</p>
+</main>
+</body>
+</html>
