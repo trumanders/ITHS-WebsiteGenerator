@@ -19,7 +19,7 @@ namespace WebsiteGenerator
         protected List<string> courses = new List<string>();
         private string className;
         private string welcome;
-        public static int numOfSchoolWebsites;
+
 
         public SchoolWebsite()
         {
@@ -27,7 +27,7 @@ namespace WebsiteGenerator
             beginningStr = $"<!DOCTYPE html>\n<html>\n<head>\n<title>{GetWebsiteName()}</title>\n<body>\n<main>\n";
             endStr = "</main>\n</body>\n</html>";
             this.welcome = $"<h1>Välkomna {className}!</h1>\n";
-            numOfSchoolWebsites++;
+
         }
 
         /// <summary>
@@ -42,6 +42,7 @@ namespace WebsiteGenerator
             {
                 Console.Write("Välj ett namn på denna websidan: ");
                 isValid = (SetWebsiteName(Console.ReadLine()));
+                if (!isValid) Console.WriteLine("En websida med detta namn finns redan.\n");
             }
 
             // Set name of the class

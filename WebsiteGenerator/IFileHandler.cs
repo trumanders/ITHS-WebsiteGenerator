@@ -7,5 +7,6 @@ namespace WebsiteGenerator
     interface IFileHandler
     {
         void SaveWebsitesToFiles();
+        void ShowAllSavedWebsiteContent();
     }
 }

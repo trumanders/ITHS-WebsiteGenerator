@@ -17,6 +17,9 @@ namespace WebsiteGenerator
     class WebsiteGenerator : Website, IFileHandler
     {
         private static int numOfSavedFiles;
+        public static int numOfSchoolWebsites = 0;
+        public static int numOfStyledSchoolWebsites = 0;
+        private int numOfWebsites;
 
         public WebsiteGenerator()
         {
@@ -44,14 +47,15 @@ namespace WebsiteGenerator
             do
             {
                 // Choose what to do
+                numOfWebsites = numOfSchoolWebsites + numOfStyledSchoolWebsites;
                 Console.Clear();
                 Console.WriteLine("---------------------------------------------------------");
                 Console.WriteLine("VÄLKOMMEN TILL DEN SUPERROLIGA HEMSIDEGENERATORN (jippy.)");
                 Console.WriteLine("---------------------------------------------------------");
                 Console.WriteLine("Vad vill du göra?");
-                Console.WriteLine($"\t1. Skapa websida till en skola\t\t({SchoolWebsite.numOfSchoolWebsites} genererade osparade)");
-                Console.WriteLine($"\t2. Skapa stylad websida till en skola\t({StyledSchoolWebsite.numOfStyledSchoolWebsites} genererade osparade)");
-                Console.WriteLine($"\t3. Visa alla nya genererade websidor\t({SchoolWebsite.numOfSchoolWebsites + StyledSchoolWebsite.numOfStyledSchoolWebsites} genererade osparade)");
+                Console.WriteLine($"\t1. Skapa websida till en skola\t\t({numOfSchoolWebsites} genererade osparade)");
+                Console.WriteLine($"\t2. Skapa stylad websida till en skola\t({numOfStyledSchoolWebsites} genererade osparade)");
+                Console.WriteLine($"\t3. Visa alla nya genererade websidor\t({numOfWebsites} genererade osparade)");
                 Console.WriteLine("\t4. Spara alla websidor till fil");
                 Console.WriteLine($"\t5. Lista sparade websidor\t\t({numOfSavedFiles} sparade filer)");
                 Console.WriteLine("\t6. Se innehåll i alla sparade websidor");
@@ -65,10 +69,12 @@ namespace WebsiteGenerator
                 case 1:
                     // Create normal website and enter info by calling constructor                    
                     allWebsites.Add(new SchoolWebsite());
+                    numOfSchoolWebsites++;
                     break;
                 case 2:
                     // Create styled website and enter info by calling constructor
                     allWebsites.Add(new StyledSchoolWebsite());
+                    numOfStyledSchoolWebsites++;
                     ConfirmWebsiteCreated();
                     break;
                 case 3:
@@ -80,6 +86,7 @@ namespace WebsiteGenerator
                     SaveWebsitesToFiles();
                     break;
                 case 5:
+                    UpdateAndCountSavedWebsites();
                     ListSavedWebsites();
                     break;
                 case 6:
@@ -88,9 +95,6 @@ namespace WebsiteGenerator
                 case 0:
                     // Quit: Save all websites? y/n -quit
                     Console.WriteLine("BYE!");
-                    break;
-                default:
-                    numOfWebsites = SchoolWebsite.numOfSchoolWebsites + StyledSchoolWebsite.numOfStyledSchoolWebsites;
                     break;
             }
             return menuChoise;
@@ -140,16 +144,16 @@ namespace WebsiteGenerator
                 string fileName = website.GetWebsiteName();
 
                 // Create the file and write the generated HTML-code to the file
-                File.WriteAllText($"{fileName}.txt", website.GenerateWebsiteString());
+                File.WriteAllText($"{fileName}.html", website.GenerateWebsiteString());
 
                 // Add the saved files' filename to a list of all saved files
-                File.AppendAllText(SAVED_WEBSITES_FILENAME, fileName + ".txt\n");
+                File.AppendAllText(SAVED_WEBSITES_FILENAME, fileName + ".html\n");
             }
             // Remove all saved websites from List
             allWebsites.Clear();
             numOfWebsites = 0;
-            SchoolWebsite.numOfSchoolWebsites = 0;
-            StyledSchoolWebsite.numOfStyledSchoolWebsites = 0;
+            numOfSchoolWebsites = 0;
+            numOfStyledSchoolWebsites = 0;
         }
 
 
