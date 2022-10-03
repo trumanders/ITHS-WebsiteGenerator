@@ -27,7 +27,6 @@ namespace WebsiteGenerator
             beginningStr = $"<!DOCTYPE html>\n<html>\n<head>\n<title>{GetWebsiteName()}</title>\n<body>\n<main>\n";
             endStr = "</main>\n</body>\n</html>";
             this.welcome = $"<h1>Välkomna {className}!</h1>\n";
-
         }
 
         /// <summary>
@@ -55,9 +54,7 @@ namespace WebsiteGenerator
 
             // Confirm that the website was created if it was of type SchoolWebsite (StyledSchoolWebsite constructor will not be called)
             if (this.GetType().ToString() == "WebsiteGenerator.SchoolWebsite")
-            {
                 ConfirmWebsiteCreated();
-            }
         }
 
 
@@ -79,10 +76,8 @@ namespace WebsiteGenerator
                 //"Kurs 1: " or "Meddelande 1: "
                 string inp = $"<p><b>{typeOfInfoUppercase} {count}:</b>" + Console.ReadLine() + "</p>\n";
 
-                if (typeOfInfo == "kurs")
-                    courses.Add(inp);
-                if (typeOfInfo == "meddelande")
-                    messages.Add(inp);
+                if (typeOfInfo == "kurs") courses.Add(inp);
+                if (typeOfInfo == "meddelande") messages.Add(inp);
                 do
                 {
                     Console.Write("Lägg in fler (j/n) > ");
@@ -100,60 +95,27 @@ namespace WebsiteGenerator
             return welcome;
         }
 
-
         /// <summary>
-        /// Return message List as a string.
+        /// Convert a List to a string
         /// </summary>
-        //protected string GetMessages()
-        //{
-        //    string messagesString = "";
-        //    for (int i = 0; i < this.messages.Count; i++)
-        //    {
-        //        messagesString += this.messages[i];
-        //    }
-        //    return messagesString;
-        //}
-
+        /// <param name="strList">The List to convert to a string</param>
+        /// <returns>A string</returns>
         protected string GetStringFromList(List<string> strList)
         {
             string outputString = "";
             for (int i = 0; i < strList.Count; i++)
-            {
                 outputString += strList[i];
-            }
             return outputString;
         }
 
         /// <summary>
-        /// Return the courses List as a string
+        /// Put together all strings to create the HTML-string
         /// </summary>
-        //protected string GetCourses()
-        //{
-        //    string coursesString = "";
-        //    for (int i = 0; i < this.courses.Count; i++)
-        //    {
-        //        coursesString += this.courses[i];
-        //    }
-        //    return coursesString;
-        //}
-
+        /// <returns>The HTML-code as a string</returns>
         public override string GenerateWebsiteString()
         {
             string websiteToString = GetBeginning() + GetWelcome() + GetStringFromList(messages) + GetStringFromList(courses) + GetEnding();
             return websiteToString;
         }
-
-        // RECURSIVE MESSAGE VERSION
-        //public static string message(int index, params string[] messageList)
-        //{
-        //    if (index < messageList.Length)
-        //    {
-        //        Console.WriteLine($"<p><b>Meddelande {index + 1}:</b>{messageList[index]}</p>");
-        //        return message(index + 1, messageList);
-        //    }
-        //    return null;
-        //}
-
-
     }
 }

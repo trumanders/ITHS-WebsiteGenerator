@@ -195,33 +195,34 @@ namespace WebsiteGenerator
             }
         }
 
-        // Update the saved websites file and count number of files
-        // if website files should be deleted from outside of the program
+        /// <summary>
+        /// Update the saved websites file and count number of files
+        /// if website files should be deleted from outside of the program
+        /// </summary> 
         private void UpdateAndCountSavedWebsites()
         {
             numOfSavedFiles = 0;
             // If Saved Websites file exists, look through it to count the files, if they exist on the disk
             if (File.Exists(SAVED_WEBSITES_FILENAME))
             {
+                // Store the strings to be removed later
                 List<string> listToRemove = new List<string>();
+
                 // Save file content into a List
                 List<string> savedFilesList = new List<string>();
+
                 foreach (string line in File.ReadAllLines(SAVED_WEBSITES_FILENAME))
-                {
-                    savedFilesList.Add(line);
-                }
+                    savedFilesList.Add(line);                
 
-
-                int fileNameindex = 0;
                 // Check each line in the Saved Websites file
                 foreach (string line in savedFilesList)
-                {                    
+                {
                     // If a file with that name exists on the disk, count it.
                     // Else remove that filename from Saved Webisites file.
                     if (File.Exists(line))
                     {
                         numOfSavedFiles++;
-                    }                      
+                    }
                     else
                         listToRemove.Add(line);
                 }
@@ -231,12 +232,13 @@ namespace WebsiteGenerator
 
                 // Rewrite Saved Website file with the content of the modified file name list
                 File.Create(SAVED_WEBSITES_FILENAME).Close();
+
                 foreach (string line in savedFilesList)
                     File.AppendAllText(SAVED_WEBSITES_FILENAME, line + "\n");
+
                 savedFilesList.Clear();
                 listToRemove.Clear();
             }
-
         }
     }
 }
